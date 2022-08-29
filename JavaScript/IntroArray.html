@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        //push-add,pop-last element us deleted,length,filter-update,delete,map-list
+
+        let basic=[];//one format
+        var small=new Array()//another format
+
+        basic.push("Manojkumar")
+        basic.push('A')
+        basic.push(false)
+        basic.push(9876556)
+
+        // for(i=0;i<basic.length;i++)
+        // {
+        //     alert(basic[i])
+        // }
+        // basic.pop()
+
+        // function value(data)
+        // {
+        //     alert(data)
+        // }
+        // basic.map(value)
+
+        var user=prompt("Tell us what is position to delete : ")
+        basic=basic.filter((pos,data)=>
+        {
+            return pos!==basic[user]
+        })
+
+        basic.map((data)=>
+        {
+            document.writeln(data+ " <br> ")
+        })
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
