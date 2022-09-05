@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC_REG_FORM</title>
+    <script src="VlidationFormInJS.js"></script>
+    <style>
+        span
+        {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h2 align="center">IRCTC ADDRESS</h2>
+    <form name="irctc" onsubmit="Active()" action="#" >
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td><input type="text" name="fno" placeholder="Flat/Door/BlockNO"/>
+                        <br><span id="Fdetails"></span></td>
+                    <td><input type="text" name="Svalue" placeholder="Street/Lane Value"><span id="sdetails"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="state1" placeholder="Statename" ><span id="state"></span></td>
+                    <td><input type="text"name="pin1" placeholder="Pincode"><br><span id="pin"></span></td>
+                </tr>
+                <tr>
+                    <td><select id="city" name="city">
+                        <option selected hidden>Selected Your CIty</option>
+                        <option>Namakkal</option>
+                        <option>Salem</option>
+                        <option>Erode</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Cancel"></td>
+                    <td><input type="submit" value="Register"></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </form>
+    
+</body>
+</html>
